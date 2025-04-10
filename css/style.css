@@ -820,14 +820,45 @@ select {
     font-size: 18px;
     font-weight: 700;
     text-transform: capitalize;
-    margin: 0 10px;
+    margin: 0 10px 10px;
     color: #302e4d;
     cursor: pointer;
-    border-bottom: 2px solid transparent;
-    white-space: nowrap;
-    padding-bottom: 2px;
+    border-bottom: 3px solid transparent;
+    padding: 5px 5px;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.portfolio .portfolio-filter button.active {
+    color: #302e4d;
+}
+
+.portfolio .portfolio-filter button:hover:not(.active) {
+    background-color: #f2f2fc;
+    color: #302e4d;
+}
+
+.pink .portfolio .portfolio-filter button.active,
+.pink .portfolio .portfolio-filter button:hover:not(.active) {
+    border-bottom-color: #ec1839;
+}
+.blue .portfolio .portfolio-filter button.active,
+.blue .portfolio .portfolio-filter button:hover:not(.active) {
+    border-bottom-color: #2196f3;
+}
+.orange .portfolio .portfolio-filter button.active,
+.orange .portfolio .portfolio-filter button:hover:not(.active) {
+    border-bottom-color: #fa5b0f;
+}
+.yellow .portfolio .portfolio-filter button.active,
+.yellow .portfolio .portfolio-filter button:hover:not(.active) {
+    border-bottom-color: #ffb400;
+}
+.green .portfolio .portfolio-filter button.active,
+.green .portfolio .portfolio-filter button:hover:not(.active) {
+    border-bottom-color: #72b626;
 }
 
 .portfolio .portfolio-item {
